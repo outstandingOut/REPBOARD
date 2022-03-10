@@ -1,17 +1,10 @@
 게시판
 
-
-
 유형1: MVC형태
-
 View > Controller > Service (비즈니스로직) > DB
 
-
-
 유형2: 
-
 Controller(View 역할 포함) > Service > DB 
-
 
 
 데이터베이스
@@ -29,17 +22,20 @@ Column: 글번호(number), 부모글번호(number), 글제목(varchar2), 작성�
 글번호가 6이고 부모글번호가 5이면 5번글에 대한 답글 ( 1번글 답글에 대한 답글)
 
 
-
 글번호에 sequence가 있어야 한다.
-
 
 
 sqlplus scott/tiger
 
 CREATE TABLE repboard(
-
   board_no number,
-
   parent_no number,
+  board_title varchar2(30),
+  board_writer varchar2(15),
+  board_dt data,
+  board_pwd varchar2(4),
+  board_cnt number(5),
+  constraint repboard_no_pk PRIMARY KEY(board_no)
+);
 
-  board_title
+
