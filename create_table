@@ -38,4 +38,13 @@ CREATE TABLE repboard(
   constraint repboard_no_pk PRIMARY KEY(board_no)
 );
 
+INESRT INTO repboard(board_no, parent_no, board_title, board_writer, board_dt, board_pwd, board_cnt) 
+VALUES(1, 0, '글1', 'SANGWOO', '21/03/01', '1234', 0);
 
+INESRT INTO repboard(board_no, parent_no, board_title, board_writer, board_dt, board_pwd, board_cnt) 
+VALUES(2, 0, '글2', '박상우', '21/03/04', '1234', 0);
+
+INESRT INTO repboard(board_no, parent_no, board_title, board_writer, board_dt, board_pwd, board_cnt) 
+VALUES(3, 2, '글3-답글2', '나는상우', '21/03/07', '1234', 0);
+
+// 엿상 01:12:10
