@@ -1,6 +1,11 @@
-# REPBOARD
-깃허브 사용법을 연습합니다.
+한 줄짜리 소스코드는 `function add(x, y) {return x + y; }` 처럼 사용합니다.
 
-여기에 원하는 내용을 입력하세요.
+```javascript
+<script>
+  var now = new Date();
+  var display = new.toLocaleTimeString();
+  document.write("현재 시각은 " + display);
+</script>
+```
 
-상우야 오늘은 막국수
+코드입력 끝!
